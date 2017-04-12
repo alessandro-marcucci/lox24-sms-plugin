@@ -2,8 +2,6 @@
 
 This is Jenkins plugin that sends SMS notification whenever there's a failed build. The plugin is powered by [LOX24][homepage]
 
-Read the documentation at http://hoiio.readthedocs.org/
-
 ### Get LOX24 Account
 
 Visit [LOX24][homepage] site to get a LOX24 account.
