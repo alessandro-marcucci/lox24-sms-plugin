@@ -1,0 +1,25 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:section title="LOX24 SMS Notification Credentials">
+        <f:entry
+                title="Konto"
+                help="/plugin/lox24-sms-notification/help-id.html"
+                field="konto">
+            <f:textbox name="lox24.konto" />
+        </f:entry>
+
+        <f:entry
+                title="Password"
+                help="/plugin/lox24-sms-notification/help-password.html"
+                field="password">
+            <f:password name="lox24.password" />
+        </f:entry>
+        
+        <f:entry
+                title="Service"
+                help="/plugin/lox24-sms-notification/help-service.html"
+                field="service">
+            <f:textbox name="lox24.service" />
+        </f:entry>
+    </f:section>
+</j:jelly>

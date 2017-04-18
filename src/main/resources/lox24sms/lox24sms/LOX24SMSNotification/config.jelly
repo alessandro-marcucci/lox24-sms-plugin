@@ -1,0 +1,22 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <f:entry title="Recipients" field="recipients">
+        <f:textbox checkUrl="'descriptorByName/LOX24SMSNotification/numberCheck?param='+encodeURIComponent(this.value)"
+                />
+    </f:entry>
+    
+    	<f:optionalBlock 
+    		name="lox24.firstFail" 
+    		field="firstFail"
+    		title="Send SMS only for the first build failure after success"
+    		inline="true">  
+        </f:optionalBlock>
+        
+    	<f:optionalBlock 
+    		name="lox24.firstSuccess" 
+    		field="firstSuccess"
+    		title="Send SMS only for the first build success after failure"
+    		inline="true">  
+        </f:optionalBlock>
+</j:jelly>
